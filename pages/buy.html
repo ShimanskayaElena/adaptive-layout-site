@@ -1,0 +1,48 @@
+<form name="infoForm" class="form-horizontal" role="form" ng-controller="BuyCtrl as buy" ng-submit="saveData()">
+        <div ng-hide="info.form">
+           <legend>
+               <h4>Регистрация</h4>
+               <p>
+                    Регистрируясь в системе, вы принимаете условия
+                    <a href="#/buy">лицензионного договора.</a>
+                </p>
+               <p>После подтверждения регистрации вы получите все необходимые инструкции для работы с программой.
+               </p>
+           </legend>
+            <div class="form-group">
+                <label for="inputName" class="col-xs-11 col-sm-5 col-xs-offset-1 col-sm-offset-0 control-label">Ваша Фамилия Имя Отчество</label>
+                <div class="col-xs-9 col-sm-5 col-xs-offset-1 col-sm-offset-0">
+                    <input type="text" name="name" class="form-control" id="inputName" placeholder="Иванов Иван Иваныч" ng-model="info.username" required>    
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputOrganization" class="col-xs-11 col-sm-5 col-xs-offset-1 col-sm-offset-0 control-label">Название учреждения</label>
+                <div class="col-xs-9 col-sm-5 col-xs-offset-1 col-sm-offset-0">
+                    <input type="text" name="organization" class="form-control" id="inputOrganization" placeholder='Ясли-сад №1 г.Минск' ng-model="info.organization" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail" class="col-xs-11 col-sm-5 col-xs-offset-1 col-sm-offset-0 control-label">Email</label>
+                <div class="col-xs-9 col-sm-5 col-xs-offset-1 col-sm-offset-0">
+                    <input type="email" name="emailinput" class="form-control" id="inputEmail" placeholder="user@domain.com" title="введите электронный адрес в  формате user@domain.com" ng-model="info.email" required>
+                    <span class="error" ng-show="infoForm.emailinput.$error.email">
+                        Неверный формат электронного адреса!
+                    </span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputTel" class="col-xs-11 col-sm-5 col-xs-offset-1 col-sm-offset-0 control-label">Телефон</label>
+                <div class="col-xs-9 col-sm-5 col-xs-offset-1 col-sm-offset-0">
+                    <input type="tel" name="phone" class="form-control" id="inputPhone" placeholder="80999999999" ng-model="info.phone" title="введите номер телефона в формате 80999999999" required pattern="[0-9]{11}"> 
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-6 col-xs-offset-1 col-sm-offset-5">
+                    <input type="submit" value="Отправить" class="btn btn-success" ng-disabled="infoForm.$invalid">
+                </div>
+            </div>
+    </div>      
+            <!--Вывод сообщения после успешной отправки данных на сервер-->
+            <!--<p ng-bind="info.text"></p> -->
+            <div ng-show="info.text">Спасибо что выбрали нашу систему!</div>
+</form>

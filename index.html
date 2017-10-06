@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru" ng-app="test">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASHA - система управления процессами в дошкольном учереждении</title>
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+    <!-- Latest compiled and minified CSS -->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">-->
+    <link href="css/styles.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!--<script src="js/bootstrap.min.js"></script>-->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
+    <script src="js/script.js"></script> 
+</head>
+<body>
+    <header role="banner">
+        <div class="container-fluid">
+            <div class="row"> 
+                <div class="col-xs-12 color_title">
+                    <h3>Программирование систем управления</h3>
+                        <h1 class="color_title">
+                            MASHA
+                            <small class="well-sm jumbotron pull-right">
+                                <a class="btn btn-link" href="#/buy">Купить</a>
+                            </small>
+                        </h1> 
+                    <div class="row">
+                        <div class="col-xs-12">    
+                            <h4>Мы сделаем Вашу жизнь легче и эффективнее!</h4>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="container-fluid">      
+            <div class="row color_menu">
+                <div class="col-sm-12">
+                    <ul class="nav nav-pills" role="navigation">
+                        <li><a href="#/description">Назначение</a></li>
+                        <li class="hidden-xs"><a href="#/opportunities">Возможности</a></li>
+                        <li class="dropdown">
+                            <a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Модули<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#/kitchen">Модуль "Питание"</a></li>
+                                <li><a href="#/store">Модуль "Кладовая"</a></li>
+                                <li><a href="#/stats">Модуль "Отчеты"</a></li>
+                                <li><a href="#/other-modules">Другие модули</a></li>
+                            </ul>
+                        </li>
+                        <li class="hidden-xs"><a href="#/response">Отзывы пользователей</a></li>
+                        <li class="hidden-xs"><a href="#/pay">Способы оплаты</a></li>
+                        <li><a href="#/query">Вопросы</a></li>
+                    </ul>
+                </div>
+            </div>  
+        </div>    
+    </header>                                                                  
+    <div class="container-fluid center">
+        <div class="row"> 
+            <div class="col-xs-12">
+                <!-- angular шаблонизатор -->
+                <div ng-view>
+                <!-- тут будут показаны подключаемые страницы -->  
+                </div>
+            </div>
+        </div>
+    </div>
+   <footer role="contentinfo" class="footer">
+        <div class="container-fluid">
+           <div class="row">
+               <div class="col-xs-11 col-xs-offset-1">
+                    <p>
+                        Разработка: R&amp;D Outsourcing
+                        <br>
+                        +375 29 7532537
+                        <br>
+                        <a href="mailto:easter.by@gmail.com">easter.by@gmail.com</a> 
+                    </p>
+               </div>
+           </div>
+        </div>
+    </footer> 
+</body>
+</html>

@@ -1,0 +1,34 @@
+<form name="myForm" class="form-horizontal" role="form" ng-controller="QueryCtrl as query" ng-submit="saveData()">
+           <legend>
+               <h4>Хотите узнать больше?</h4>
+               <h4>Задайте вопрос нашим специалистам.</h4>
+           </legend>
+            <div class="form-group">
+                <label for="inputname" class="col-xs-4 col-xs-offset-1 col-sm-offset-0 control-label">Ваше имя</label>
+                <div class="col-xs-8 col-sm-5 col-xs-offset-1 col-sm-offset-0">
+                    <input type="text" name="nameinput" class="form-control" id="inputname" placeholder="Светлана Ивановна" ng-model="user.name" required autofocus>    
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail" class="col-xs-4 col-xs-offset-1 col-sm-offset-0 control-label">Email</label>
+                <div class="col-xs-8 col-sm-5 col-xs-offset-1 col-sm-offset-0">
+                    <input type="email" name="emailinput" class="form-control" id="inputEmail" placeholder="abcd@abcd.by" ng-model="user.email" required>
+                </div>
+                <span class="error" ng-show="myForm.emailinput.$error.email">
+                    Неверно указан электронный адрес!
+                </span>
+            </div>
+            <div class="form-group">
+                <label for="inputText" class="col-xs-4 col-xs-offset-1 col-sm-offset-0 control-label">Текст вопроса</label>
+                <div class="col-xs-8 col-sm-5 col-xs-offset-1 col-sm-offset-0">
+                    <textarea name="textinput" class="form-control" id="inputText" ng-model="user.text" required></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-offset-1 col-sm-offset-4 col-sm-8">
+                    <input type="submit" value="Отправить" class="btn btn-success" ng-disabled="myForm.$invalid">
+                </div>
+            </div>  
+            <!--Вывод сообщения после успешной отправки данных на сервер-->
+            <p ng-bind="user.reply"></p> 
+</form>
