@@ -1,6 +1,8 @@
 # MASHA
 test task - adaptive layout site
 
+Демо версию этого проекта можно посмотреть здесь - https://shimanskayaelena.github.io/adaptive-layout-site/#/opportunities
+
 Необходиьо было сделать актуальный адаптивный дизайн для продукта: http://masha24.by.
 
 Установка: необходимо выполнить следующие команды 
