@@ -1,31 +1,25 @@
 # MASHA
-test task - adaptive layout site
 
-Демо версию этого проекта можно посмотреть здесь - https://shimanskayaelena.github.io/adaptive-layout-site/#/opportunities
+An example of an adaptive cross-browser single-page application (SPA).
 
-Необходиьо было сделать актуальный адаптивный дизайн для продукта: http://masha24.by.
+You can see the demo version of this project here https://shimanskayaelena.github.io/adaptive-layout-site/#/opportunities
 
-Установка: необходимо выполнить следующие команды 
+Installation: you must run the following commands
 - git init
 - git clone https://github.com/ShimanskayaElena/adaptive-layout-site
 - npm install
 - bower install
 
-Приложение необходимо запускать на localhost.
+The application must be run on localhost.
 
-Целью создания этого сайта была демонстрация возможности совместного использования таких популярных фреймворков, 
-как AngularJS и  Bootstrap3 для максимально быстрого и удобного создания одностраничных приложений.
+The purpose of creating this site was to demonstrate the possibility of sharing such popular frameworks as AngularJS and Bootstrap3 for the fastest and most convenient creation of single-page applications.
 
-Было выбрано достаточно большое количество точек прерывания для медиа запросов специально,
-чтобы показать на сколько гибко может меняться дизайн сайта подстраиваясь под большинство наиболее популярных
-на сегодняшний день девайсов. 
-Для того, чтобы сайт  одинаково смотрелся как на больших экранах, так и на мобильниках,
-я сохранила первоначальный вид главного меню, убрав некоторые пункты меню с помощью 
-специальных классов Bootstrap. По этой же причине я не использовала специальное раскрывающееся меню для мобильников,
-чтобы сделать вёрстку в index.html максимально простой, логичной и семантической. В случае необходимости 
-в этот код можно будет легко внести необходимые изменения.
-Для удобства редактирования CSS был задействован препроцессор LESS, благодаря чему теперь можно 
-буквально за одну минуту изменить цветовое оформление сайта и используемые шрифты. В самом Bootstrap были 
-исключены компоненты, которые не задействованы в вёрстке для того, чтобы уменьшить размер конечного скомпилированного
-css-файла.
-Конечно же, нет предела совершенству, поэтому ещё очень многое в этом проекте можно сделать лучше:).
+A sufficiently large number of interrupt points for media queries was chosen specially to show how flexible the design of the site can be adjusted to most of today's most popular devices.
+
+In order for the site to look the same on both large screens and mobile phones, I retained the original look of the main menu, removing some menu items using special Bootstrap classes.
+
+For the same reason, I did not use the drop-down menu for mobile phones to make index.html layout as simple, logical, and semantic as possible. If necessary, you can easily make the necessary changes to this code.
+
+For the convenience of CSS editing, the LESS preprocessor was used, so now you can literally change the color design of the site and the fonts used in just one minute.
+
+Bootstrap itself excludes components that are not involved in the layout in order to reduce the size of the final compiled css file.
